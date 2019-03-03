@@ -1,0 +1,7 @@
+/* pages/lists/lists.wxss */
+.slide-image{
+  height: 320rpx;
+  width: 750rpx;
+  padding: 0 5rpx;
+  text-align: center;
+}

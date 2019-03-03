@@ -1,0 +1,44 @@
+/**index.wxss**/
+.banner{
+  width: 100%;
+  margin: 0 auto;
+}
+.slide-image{
+  height: 320rpx;
+  width: 100%;
+}
+.grid{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 740rpx;
+  height: 350rpx;
+  padding: 30rpx 0rpx;
+  background: #fff;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  margin-top: 40rpx;
+}
+/* 列表 */
+.grid-lists{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.grid-lists .grid-lists-item{
+  display: flex;
+  width: 144rpx;
+  height: 128rpx; 
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.grid-lists .grid-lists-item image{
+  width: 84rpx;
+  height: 84rpx;
+}
+.grid-lists .grid-lists-item text{
+  font-size: 24rpx;
+}
