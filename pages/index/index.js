@@ -16,7 +16,21 @@ Page({
     indicatorDots: true,
     autoplay: true,
     interval: 5000,
-    duration: 1000
+    duration: 1000,
+    gridArrConfigs: [
+      [
+        { img: '/images/dixiacheng.jpg', name: '阿拉德之怒(阿拉德盟约)' },
+        { img: '/images/rongyao.jpg', name: '王者荣耀' },
+        { img: '/images/wulin.jpg', name: '武林外传手游' },
+        { img: '/images/meng.jpg', name: '梦幻西游' },
+      ],
+      [
+        { img: '/images/chuanqi.jpg', name: '热血传奇安卓版' },
+        { img: '/images/yinyang.gif', name: '阴阳师' },
+        { img: '/images/dahua.gif', name: '大话西游' },
+        { img: '/images/shikong.jpg', name: '时空猎人' },
+      ],
+    ]
   },
   // banner跳转函数
   jumpToUrl: function(e) {

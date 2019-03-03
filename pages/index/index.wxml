@@ -13,6 +13,7 @@
     </block>
 </swiper>
 </view>
+<!-- grid * 5 -->
 <view class="grid">
   <view class="grid-lists">
     <view class="grid-lists-item">
@@ -56,6 +57,50 @@
     <view class="grid-lists-item">
       <image src='/images/lian.png'></image>
       <text>代练</text>
+    </view>
+  </view>
+</view>
+<!-- grid * 4  -->
+<view class="grid grid-higher">
+  <view class="grid-game" wx:for="{{gridArrConfigs}}" wx:for-item="configs">
+    <view class="grid-game-item" wx:for="{{configs}}">
+      <image class="game-pic" src="{{item.img}}"></image>
+      <text class='game-name'>{{item.name}}</text>
+    </view>
+  </view>
+</view>
+<!-- 疯抢 * 4-->
+<view class="grid grid-320">
+  <view class="grid-huodong">
+    <view class="grid-huodong-item">
+      <view class="grid-huodong-text">
+        <text>今日疯抢</text>
+        <text>1元超值疯抢中</text>
+      </view>
+      <image class="grid-huodong-pic" src="/images/qiang.png"></image>
+    </view>
+    <view class="grid-huodong-item">
+      <view class="grid-huodong-text">
+        <text>新人专享</text>
+        <text>APP新人送好礼</text>
+      </view>
+      <image class="grid-huodong-pic" src="/images/person.png"></image>
+    </view>
+  </view>
+  <view class="grid-huodong">
+    <view class="grid-huodong-item">
+      <view class="grid-huodong-text">
+        <text>新游福利</text>
+        <text>新游礼包低价抢购</text>
+      </view>
+      <image class="grid-huodong-pic" src="/images/play.png"></image>
+    </view>
+    <view class="grid-huodong-item">
+      <view class="grid-huodong-text">
+        <text>游戏充值</text>
+        <text>超低折扣快速到账</text>
+      </view>
+      <image class="grid-huodong-pic" src="/images/renminbi.png"></image>
     </view>
   </view>
 </view>
