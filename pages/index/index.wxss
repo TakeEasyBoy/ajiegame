@@ -80,7 +80,8 @@ page{
 .grid-huodong-item{
   width: 345rpx;
   height: 160rpx;
-  margin: 0 10rpx;
+  /* margin: 0 10rpx; */
+  padding: 0 10rpx;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
