@@ -62,8 +62,8 @@
 </view>
 <!-- grid * 4  -->
 <view class="grid grid-higher">
-  <view class="grid-game" wx:for="{{gridArrConfigs}}" wx:for-item="configs">
-    <view class="grid-game-item" wx:for="{{configs}}">
+  <view class="grid-game" wx:for="{{gridArrConfigs}}" wx:for-item="configs" wx:key="{{index}}">
+    <view class="grid-game-item" wx:for="{{configs}}" bindtap='jumptoPage' data-page="{{item.page}}" wx:key="{{index}}">
       <image class="game-pic" src="{{item.img}}"></image>
       <text class='game-name'>{{item.name}}</text>
     </view>

@@ -1,7 +1,22 @@
 /* pages/lists/lists.wxss */
-.slide-image{
-  height: 320rpx;
-  width: 750rpx;
-  padding: 0 5rpx;
-  text-align: center;
+.game-lists{
+  width: 100%;
+  padding: 10rpx;
+  background: #fff;
+}
+.game-list-item{
+  height: 188rpx;
+  padding: 18rpx 10rpx;
+}
+.game-list-title{
+  display: flex;
+  flex-direction: row;
+  height: 48rpx;
+  line-height: 48rpx;
+  font-size: 28rpx;
+}
+.game-sub-title{
+  font-size: 24rpx;
+  color: #4190e9;
+  margin-left: 10rpx;
 }

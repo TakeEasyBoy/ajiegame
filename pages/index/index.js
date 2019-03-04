@@ -19,16 +19,16 @@ Page({
     duration: 1000,
     gridArrConfigs: [
       [
-        { img: '/images/dixiacheng.jpg', name: '阿拉德之怒(阿拉德盟约)' },
-        { img: '/images/rongyao.jpg', name: '王者荣耀' },
-        { img: '/images/wulin.jpg', name: '武林外传手游' },
-        { img: '/images/meng.jpg', name: '梦幻西游' },
+        { img: '/images/dixiacheng.jpg', name: '阿拉德之怒(阿拉德盟约)', page: '/pages/lists/lists' },
+        { img: '/images/rongyao.jpg', name: '王者荣耀', page: '/pages/lists/lists' },
+        { img: '/images/wulin.jpg', name: '武林外传手游', page: '/pages/lists/lists' },
+        { img: '/images/meng.jpg', name: '梦幻西游', page: '/pages/lists/lists' },
       ],
       [
-        { img: '/images/chuanqi.jpg', name: '热血传奇安卓版' },
-        { img: '/images/yinyang.gif', name: '阴阳师' },
-        { img: '/images/dahua.gif', name: '大话西游' },
-        { img: '/images/shikong.jpg', name: '时空猎人' },
+        { img: '/images/chuanqi.jpg', name: '热血传奇安卓版', page: '/pages/lists/lists' },
+        { img: '/images/yinyang.gif', name: '阴阳师', page: '/pages/lists/lists' },
+        { img: '/images/dahua.gif', name: '大话西游', page: '/pages/lists/lists' },
+        { img: '/images/shikong.jpg', name: '时空猎人', page: '/pages/lists/lists' }
       ],
     ]
   },
@@ -36,5 +36,13 @@ Page({
   jumpToUrl: function(e) {
     var url = e.currentTarget.dataset.url
     console.log(url)
+  },
+  // 跳转页面
+  jumptoPage: function(e) {
+    var page = e.currentTarget.dataset.page
+    console.log(page)
+    wx.switchTab({
+      url: page,
+    })
   }
 })

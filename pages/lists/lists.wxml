@@ -1,2 +1,16 @@
 <!--pages/lists/lists.wxml-->
-<text>lebiao</text>
+<view class="game-lists">
+  <view class="game-list-item">
+    <view class="game-list-title">
+      <text>【担保】127金币 </text>
+      <text class="game-sub-title"> 1元=1.1金币【担保】</text>
+      <text class="sprite sprite-icon"></text>
+    </view>
+    <view class="game-list-info">
+      <text>卖家信用</text>
+      <text>成交率</text>
+    </view>
+    <view class="game-list-info"></view>
+    <view class="game-list-price"></view>
+  </view>
+</view>
