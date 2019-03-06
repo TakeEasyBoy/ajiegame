@@ -2,15 +2,34 @@
 <view class="game-lists">
   <view class="game-list-item">
     <view class="game-list-title">
-      <text>【担保】127金币 </text>
-      <text class="game-sub-title"> 1元=1.1金币【担保】</text>
-      <text class="sprite sprite-icon"></text>
+      <text class="title-type title-type-zhanghao">帐</text>
+      <text>【60级】天空鬼三粉宠低价处理 </text>
     </view>
     <view class="game-list-info">
-      <text>卖家信用</text>
-      <text>成交率</text>
+      <view>
+        <text class="game-info-mainfont">卖家信用：</text>
+        <text class="iconfont icon-xingxing rate-color-star"></text>
+        <text class="iconfont icon-xingxing rate-color-star"></text>
+      </view>
+      <view>
+        <text class="game-info-mainfont">近7天成交率：70%</text>
+      </view>
     </view>
-    <view class="game-list-info"></view>
-    <view class="game-list-price"></view>
+    <view class="game-list-info">
+      <view>
+        <text class="game-info-mainfont">oppo账号</text>
+      </view>
+      <view>
+        <text class="game-info-mainfont">冰封雪域49服</text>
+      </view>
+      <view>
+        <text class="iconfont icon-renzheng color-renzheng"></text>
+        <text class="iconfont icon-baozhang color-jishou"></text>
+        <text class="iconfont icon-xieyi color-xieyi"></text>
+      </view>
+    </view>
+    <view class="game-list-price">
+      ￥:123,3.02
+    </view>
   </view>
 </view>

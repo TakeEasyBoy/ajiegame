@@ -19,7 +19,7 @@ Page({
     duration: 1000,
     gridArrConfigs: [
       [
-        { img: '/images/dixiacheng.jpg', name: '阿拉德之怒(阿拉德盟约)', page: '/pages/lists/lists' },
+        { img: '/images/dixiacheng.jpg', name: '阿拉德之怒(地下城盟约)', page: '/pages/lists/lists' },
         { img: '/images/rongyao.jpg', name: '王者荣耀', page: '/pages/lists/lists' },
         { img: '/images/wulin.jpg', name: '武林外传手游', page: '/pages/lists/lists' },
         { img: '/images/meng.jpg', name: '梦幻西游', page: '/pages/lists/lists' },
@@ -41,7 +41,7 @@ Page({
   jumptoPage: function(e) {
     var page = e.currentTarget.dataset.page
     console.log(page)
-    wx.switchTab({
+    wx.navigateTo({
       url: page,
     })
   }
