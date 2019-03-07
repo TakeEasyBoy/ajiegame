@@ -3,13 +3,15 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/lists/lists",
-    "pages/photo/splice"
+    "pages/photo/splice",
+    "pages/details/details"
   ],
   "window": {
-    "backgroundTextStyle": "light",
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "阿杰游戏",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
   },
   "tabBar": {
     "selectedColor": "#f19200",

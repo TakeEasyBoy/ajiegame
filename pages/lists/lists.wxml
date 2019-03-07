@@ -1,26 +1,26 @@
 <!--pages/lists/lists.wxml-->
 <view class="game-lists">
-  <view class="game-list-item">
+  <view class="game-list-item" wx:for="{{lists}}" bindtap='gotoDetail' wx:key="{{item.id}}" data-id="{{item.id}}">
     <view class="game-list-title">
-      <text class="title-type title-type-zhanghao">帐</text>
-      <text>【60级】天空鬼三粉宠低价处理 </text>
+      <text class="title-type title-type-{{item.icon}}">{{item.type}}</text>
+      <text>{{item.title}} </text>
     </view>
     <view class="game-list-info">
       <view>
         <text class="game-info-mainfont">卖家信用：</text>
-        <text class="iconfont icon-xingxing rate-color-star"></text>
+        <text class="iconfont icon-xingxing rate-color-star" ></text>
         <text class="iconfont icon-xingxing rate-color-star"></text>
       </view>
       <view>
-        <text class="game-info-mainfont">近7天成交率：70%</text>
+        <text class="game-info-mainfont">近7天成交率：{{item.dealRate}}</text>
       </view>
     </view>
     <view class="game-list-info">
       <view>
-        <text class="game-info-mainfont">oppo账号</text>
+        <text class="game-info-mainfont">{{item.accountType}}</text>
       </view>
       <view>
-        <text class="game-info-mainfont">冰封雪域49服</text>
+        <text class="game-info-mainfont">{{item.serverArea}}</text>
       </view>
       <view>
         <text class="iconfont icon-renzheng color-renzheng"></text>
@@ -29,7 +29,7 @@
       </view>
     </view>
     <view class="game-list-price">
-      ￥:123,3.02
+      ￥:{{item.price}}
     </view>
   </view>
 </view>
